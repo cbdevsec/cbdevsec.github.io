@@ -1,0 +1,37 @@
+.navb {
+    background-color: #191919;
+    height: 100px;
+    width: 100vw;
+    color: white;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+}
+
+.navlogo {
+    width: 100px;
+    border-radius: 2rem;
+    padding: 20px;
+}
+
+.navlist {
+    padding-right: 50px;
+}
+
+.navlist a {
+    padding-left: 40px;
+}
+
+.navbutton {
+    padding-right: 20px;
+}
+.navbutton a {
+    background-color: black;
+    border-radius: 1rem;
+    font-size: large;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
