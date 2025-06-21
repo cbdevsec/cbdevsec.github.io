@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/static/css/main.0571d671.css",
+    "main.js": "/static/js/main.e6ccdb4a.js",
+    "static/js/453.1eb62abb.chunk.js": "/static/js/453.1eb62abb.chunk.js",
+    "static/media/cbdevsec.png": "/static/media/cbdevsec.87f341e626aa822f5eef.png",
+    "static/media/cisco.png": "/static/media/cisco.c285df7b374b19d25da8.png",
+    "static/media/javascript.png": "/static/media/javascript.b3f8fe490fe28e2e6c28.png",
+    "index.html": "/index.html",
+    "main.0571d671.css.map": "/static/css/main.0571d671.css.map",
+    "main.e6ccdb4a.js.map": "/static/js/main.e6ccdb4a.js.map",
+    "453.1eb62abb.chunk.js.map": "/static/js/453.1eb62abb.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.0571d671.css",
+    "static/js/main.e6ccdb4a.js"
+  ]
+}
