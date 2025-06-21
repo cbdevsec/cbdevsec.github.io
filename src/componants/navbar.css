@@ -1,0 +1,46 @@
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100px;
+    background-color: #8e5363;
+}
+.nav-links {
+    display: flex;
+    width: 40%;
+    justify-content: space-between;
+    padding-right: 40px;
+}
+.nav-logo {
+    width: 80px;
+    padding-left: 20px;
+}
+.nav-link{
+    color: white;
+    text-decoration: none;
+}
+.nav-link-git{
+    color: white;
+    text-decoration: none;
+    background-color: #282828;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 1rem;
+}
+.mobile-navbar{
+    position: fixed;
+    bottom: 0;
+    z-index: 999;
+    height: 10vh;
+    width: 100vw;
+    background-color: #8e5363;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.nav-links-mobile {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 70vw;
+}
