@@ -2,6 +2,7 @@ import React from 'react'
 import Navbar from '../componants/Navbar'
 import Footer from '../componants/Footer'
 import './../App.css'
+import { Link } from 'react-router-dom'
 
 function Resume() {
   return (
@@ -11,7 +12,7 @@ function Resume() {
       <div>
         <h1>Resume</h1>
         <h3>🎓 Aya Khiouat</h3>
-        <p>📍 Algiers, Algeria · 📧 ayakhiouat@gmail.com · 🌐 linkedin.com/in/ayakh</p>
+        <p>📍 Algiers, Algeria · 📧 ayakhiouat@gmail.com · 🌐 <Link to='https://www.linkedin.com/in/ayakh' className='linkedin-link'>Linkedin</Link></p>
         <h3>Summary:</h3>
         <p>Junior Cybersecurity Analyst with hands-on experience in community-driven tech initiatives, cybersecurity simulations, and IT systems. Equipped with strong web development skills, CCNA certification, and a background in system maintenance. Fluent in four languages and known for leadership, communication, and adaptability in fast-paced environments.</p>
         <h3>Education:</h3>
