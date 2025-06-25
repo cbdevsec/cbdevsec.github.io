@@ -9,6 +9,7 @@ import AIinLuxuryRetail from './Blogs/AIinLuxuryRetail';
 import AuraConsortiumCyberSec from './Blogs/AuraConsortiumCyberSec';
 import StudyingEarlyMorning from './Blogs/StudyingEarlyMorning';
 import GettingThingsDone from './Blogs/GettingThingsDone';
+import Skills from './pages/Skills';
 
 
 function App() {
@@ -20,6 +21,7 @@ function App() {
         <Route path="/blog" element={<Blog />} />
         <Route path="/projects" element={<Projects />} />
         <Route path="/resume" element={<Resume />} />
+        <Route path="/skills" element={<Skills />} />
         <Route path="/blog1" element={<AIinLuxuryRetail />} />
         <Route path="/blog2" element={<AuraConsortiumCyberSec />} />
         <Route path="/blog3" element={<StudyingEarlyMorning />} />

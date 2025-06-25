@@ -98,3 +98,35 @@
   color: white;
   text-decoration: none;
 }
+.back-home {
+    color: white;
+}
+.back-home:hover {
+    color: white;
+    text-decoration: none;
+}
+.err404 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.blogs{
+    display: flex;
+    flex-direction: column;
+    height: 60vh;
+    justify-content: space-between;
+}
+.blog-post {
+    background-color: #8e5363;
+    padding: 20px;
+    display: flex;
+    border-radius: 20px;
+}
+.blog-link {
+    color: white;
+}
+.blog-link:hover {
+    color: white;
+    text-decoration: none;
+}
