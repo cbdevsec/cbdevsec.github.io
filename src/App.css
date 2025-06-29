@@ -122,6 +122,7 @@
     padding: 20px;
     display: flex;
     border-radius: 20px;
+    margin-bottom: 10px;
 }
 .blog-link {
     color: white;
@@ -129,4 +130,34 @@
 .blog-link:hover {
     color: white;
     text-decoration: none;
+}
+.project-card {
+    background-color: #8e5363;
+    padding: 20px;
+    justify-content: space-between;
+    border-radius: 10px;
+    display: flex;
+    margin-bottom: 10px;
+}
+.project-card img {
+    width: 40vw;
+}
+.projects-part {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    
+}
+.project-card h3 {
+    color: white;
+}
+.card-link {
+    color: white;
+    text-decoration: none;
+}
+.card-link:hover {
+    color: #522929;
+}
+.bg-git{
+    max-height: 500px;
 }
