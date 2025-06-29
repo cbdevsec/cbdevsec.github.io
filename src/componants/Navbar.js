@@ -35,7 +35,6 @@ function Navbar() {
             <Link to='/resume' className='nav-link'><h3><AiFillFilePdf/></h3></Link>
             <Link to='/blog' className='nav-link'><h3><AiFillBook/></h3></Link>
             <Link to='/projects' className='nav-link'><h3><AiFillGithub/></h3></Link>
-            <Link to='/skills' className='nav-link'><h3><AiFillStar/></h3></Link>
         </div>
     </nav>
     ) : (
@@ -47,7 +46,6 @@ function Navbar() {
             <Link to='/resume' className='nav-link'><h3>Resume</h3></Link>
             <Link to='/blog' className='nav-link'><h3>Blog</h3></Link>
             <Link to='/projects' className='nav-link'><h3>Projects</h3></Link>
-            <Link to='/skills' className='nav-link'><h3>Skills</h3></Link>
             <Link to='https://github.com/cbdevsec' className='nav-link-git'><h3><BiGitBranch/><AiFillStar/></h3></Link>
         </div>
       </nav>

@@ -3,6 +3,7 @@ import Navbar from '../componants/Navbar'
 import Footer from '../componants/Footer'
 import './../App.css'
 import Photo1 from './../assets/cbdevsec.png'
+import Avatar from './../assets/avatar.png'
 import Cisco from './../assets/cisco.png'
 import Reactimg from './../assets/react.png'
 import Pythonimg from './../assets/python.png'
@@ -48,7 +49,7 @@ function Home() {
                 <p>& IT system maintenance student / Inside LVMH alumni</p>
             </div>
             <div className='title2'>
-            <img src={Photo1} alt=''></img>
+            <img src={Avatar} alt=''></img>
             </div>
         </div>
       ) }
