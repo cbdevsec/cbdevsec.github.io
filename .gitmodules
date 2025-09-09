@@ -1,0 +1,15 @@
+[submodule "themes/ananke"]
+	path = themes/ananke
+	url = https://github.com/theNewDynamic/gohugo-theme-ananke.git
+[submodule "themes/stack"]
+	path = themes/stack
+	url = https://github.com/CaiJimmy/hugo-theme-stack.git
+[submodule "themes/fluidity"]
+	path = themes/fluidity
+	url = https://github.com/wayjam/hugo-theme-fluidity.git
+[submodule "themes/seven"]
+	path = themes/seven
+	url = https://github.com/mrhelloboy/seven.git
+[submodule "themes/hellofriend"]
+	path = themes/hellofriend
+	url = https://github.com/rhazdon/hugo-theme-hello-friend-ng
