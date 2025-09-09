@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Luxry-Retail on </title>
+    <link>//localhost:1313/tags/luxry-retail/</link>
+    <description>Recent content in Luxry-Retail on </description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <lastBuildDate>Wed, 22 Jan 2025 10:17:11 -0400</lastBuildDate>
+    <atom:link href="//localhost:1313/tags/luxry-retail/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Implementation of AI in Luxury Retail</title>
+      <link>//localhost:1313/posts/implementation-of-ai-in-luxury-retail/</link>
+      <pubDate>Wed, 22 Jan 2025 10:17:11 -0400</pubDate>
+      <guid>//localhost:1313/posts/implementation-of-ai-in-luxury-retail/</guid>
+      <description>&lt;h2 id=&#34;the-implementation-of-ai-in-luxury-retail-lvmh-as-an-example&#34;&gt;The implementation of AI in luxury retail: (LVMH as an example)&lt;/h2&gt;&#xA;&lt;p&gt;“64% of larger retailers with annual revenues exceeding $500 M are already using AI, which is 55% more than the total retail industry adoption rate with 54% of them having more than 6 AI use cases” This data -from Nvidia’s retail state of AI report 2024- highlights how larger retail organizations, often benefiting from greater financial resources and expertise, lead the way in AI integration within the industry.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
