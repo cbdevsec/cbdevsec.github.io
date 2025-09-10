@@ -15,39 +15,8 @@
                 href="//localhost:1313/"
                 />
   </url><url>
-    <loc>//localhost:1313/resume/</loc>
-    <lastmod>2025-09-09T10:57:37-04:00</lastmod>
-  </url><url>
-    <loc>//localhost:1313/about/</loc>
-    <lastmod>2025-09-09T10:52:39-04:00</lastmod>
-  </url><url>
-    <loc>//localhost:1313/posts/implementation-of-ai-in-luxury-retail/</loc>
-    <lastmod>2025-01-22T10:17:11-04:00</lastmod>
-  </url><url>
-    <loc>//localhost:1313/tags/luxry-retail/</loc>
-    <lastmod>2025-01-22T10:17:11-04:00</lastmod>
-  </url><url>
     <loc>//localhost:1313/posts/</loc>
     <lastmod>2025-01-22T10:17:11-04:00</lastmod>
-  </url><url>
-    <loc>//localhost:1313/tags/</loc>
-    <lastmod>2025-01-22T10:17:11-04:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="fr"
-                href="//localhost:1313/fr/tags/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="//localhost:1313/tags/"
-                />
-  </url><url>
-    <loc>//localhost:1313/posts/exploring-aura-blockchain-consortium-security-challenges/</loc>
-    <lastmod>2024-12-29T10:32:50-04:00</lastmod>
-  </url><url>
-    <loc>//localhost:1313/tags/luxury-retail-cybersecurity-web3/</loc>
-    <lastmod>2024-12-29T10:32:50-04:00</lastmod>
   </url><url>
     <loc>//localhost:1313/categories/</loc>
     <xhtml:link
@@ -59,6 +28,18 @@
                 rel="alternate"
                 hreflang="en"
                 href="//localhost:1313/categories/"
+                />
+  </url><url>
+    <loc>//localhost:1313/tags/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="fr"
+                href="//localhost:1313/fr/tags/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="//localhost:1313/tags/"
                 />
   </url>
 </urlset>
