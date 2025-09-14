@@ -95,7 +95,7 @@ jobs:
             --minify \
             --baseURL "https://cbdevsec.github.io/" \
             --cacheDir "${{ runner.temp }}/hugo_cache" \
-            --buildDrafts --buildFuture --buildExpired --verbose
+            --buildDrafts --buildFuture --buildExpired 
 
       - name: Disable Jekyll
         run: touch ./public/.nojekyll
