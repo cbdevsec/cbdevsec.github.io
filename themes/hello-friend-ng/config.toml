@@ -269,3 +269,7 @@ disableHugoGeneratorInject = false
     identifier = "resume"
     name = "Resume"
     url = "resume/"
+  [[menu.main]]
+    identifier = "win11guide"
+    name = "Win11"
+    url = "win11guide"

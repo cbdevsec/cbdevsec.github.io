@@ -6,8 +6,22 @@
     <description>Recent content on </description>
     <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Tue, 09 Sep 2025 10:57:37 -0400</lastBuildDate>
+    <lastBuildDate>Sun, 28 Sep 2025 10:17:58 -0400</lastBuildDate>
     <atom:link href="//localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>En</title>
+      <link>//localhost:1313/win11guide/en/</link>
+      <pubDate>Sun, 28 Sep 2025 10:17:58 -0400</pubDate>
+      <guid>//localhost:1313/win11guide/en/</guid>
+      <description>&lt;h1 id=&#34;the-complete-guide-to-upgrading-to-windows-11&#34;&gt;The Complete Guide to Upgrading to Windows 11&lt;/h1&gt;&#xA;&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;&#xA;&lt;p&gt;Microsoft Windows 11, released in October 2021, introduces a redesigned user interface, enhanced security features, and improved performance optimizations. However, unlike previous upgrades (e.g., from Windows 7/8 to Windows 10), the migration to Windows 11 is bound by stricter hardware and firmware requirements, particularly regarding UEFI, Secure Boot, and TPM 2.0.&#xA;This guide provides a step-by-step academic and technical framework for safely upgrading from Windows 10 (or earlier supported editions) to Windows 11. It covers system compatibility analysis, disk partitioning checks, TPM activation, restore point creation, upgrade execution (via Windows Update or ISO), and contingency planning.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Win11guide</title>
+      <link>//localhost:1313/win11guide/</link>
+      <pubDate>Sun, 28 Sep 2025 09:17:29 -0400</pubDate>
+      <guid>//localhost:1313/win11guide/</guid>
+      <description>&lt;h2 id=&#34;english&#34;&gt;English:&lt;/h2&gt;&#xA;&lt;p&gt;🖥️ The Complete Academic Guide to Upgrading to Windows 11&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;p&gt;Introduction&#xA;Microsoft Windows 11, released in October 2021, introduces a redesigned user interface, enhanced security features, and improved performance optimizations. However, unlike previous upgrades (e.g., from Windows 7/8 to Windows 10), the migration to Windows 11 is bound by stricter hardware and firmware requirements, particularly regarding UEFI, Secure Boot, and TPM 2.0.&#xA;This guide provides a step-by-step academic and technical framework for safely upgrading from Windows 10 (or earlier supported editions) to Windows 11. It covers system compatibility analysis, disk partitioning checks, TPM activation, restore point creation, upgrade execution (via Windows Update or ISO), and contingency planning.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Resume</title>
       <link>//localhost:1313/resume/</link>

@@ -1,0 +1,573 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+        <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="author" content="">
+<meta name="description" content="English: 🖥️ The Complete Academic Guide to Upgrading to Windows 11
+Introduction Microsoft Windows 11, released in October 2021, introduces a redesigned user interface, enhanced security features, and improved performance optimizations. However, unlike previous upgrades (e.g., from Windows 7/8 to Windows 10), the migration to Windows 11 is bound by stricter hardware and firmware requirements, particularly regarding UEFI, Secure Boot, and TPM 2.0. This guide provides a step-by-step academic and technical framework for safely upgrading from Windows 10 (or earlier supported editions) to Windows 11. It covers system compatibility analysis, disk partitioning checks, TPM activation, restore point creation, upgrade execution (via Windows Update or ISO), and contingency planning.
+" />
+<meta name="keywords" content="" />
+<meta name="robots" content="noodp" />
+<meta name="theme-color" content="" />
+<link rel="canonical" href="//localhost:1313/win11guide/" />
+
+
+    <title>
+        
+            Win11guide ::  
+        
+    </title>
+
+
+
+
+
+  <link rel="stylesheet" href="/main.min.ab5336003ba331300318b49292c672210905baf1ef5410a739f647e70c8808fa.css" integrity="sha256-q1M2ADujMTADGLSSksZyIQkFuvHvVBCnOfZH5wyICPo=" crossorigin="anonymous">
+
+
+
+
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="">
+    <link rel="shortcut icon" href="/favicon.ico">
+    <meta name="msapplication-TileColor" content="">
+
+
+
+  <meta itemprop="name" content="Win11guide">
+  <meta itemprop="description" content="English: 🖥️ The Complete Academic Guide to Upgrading to Windows 11
+Introduction Microsoft Windows 11, released in October 2021, introduces a redesigned user interface, enhanced security features, and improved performance optimizations. However, unlike previous upgrades (e.g., from Windows 7/8 to Windows 10), the migration to Windows 11 is bound by stricter hardware and firmware requirements, particularly regarding UEFI, Secure Boot, and TPM 2.0. This guide provides a step-by-step academic and technical framework for safely upgrading from Windows 10 (or earlier supported editions) to Windows 11. It covers system compatibility analysis, disk partitioning checks, TPM activation, restore point creation, upgrade execution (via Windows Update or ISO), and contingency planning.">
+  <meta itemprop="datePublished" content="2025-09-28T09:17:29-04:00">
+  <meta itemprop="dateModified" content="2025-09-28T09:17:29-04:00">
+  <meta itemprop="wordCount" content="2953">
+  <meta itemprop="image" content="//localhost:1313/">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="//localhost:1313/">
+  <meta name="twitter:title" content="Win11guide">
+  <meta name="twitter:description" content="English: 🖥️ The Complete Academic Guide to Upgrading to Windows 11
+Introduction Microsoft Windows 11, released in October 2021, introduces a redesigned user interface, enhanced security features, and improved performance optimizations. However, unlike previous upgrades (e.g., from Windows 7/8 to Windows 10), the migration to Windows 11 is bound by stricter hardware and firmware requirements, particularly regarding UEFI, Secure Boot, and TPM 2.0. This guide provides a step-by-step academic and technical framework for safely upgrading from Windows 10 (or earlier supported editions) to Windows 11. It covers system compatibility analysis, disk partitioning checks, TPM activation, restore point creation, upgrade execution (via Windows Update or ISO), and contingency planning.">
+
+
+
+
+
+
+
+    <meta property="article:published_time" content="2025-09-28 09:17:29 -0400 EDT" />
+
+
+
+
+
+
+
+
+
+
+
+
+    </head>
+
+    
+        <body>
+    
+    
+        <div class="container">
+            <header class="header">
+    <span class="header__inner">
+        <a href="/" style="text-decoration: none;">
+    <div class="logo">
+        
+            <span class="logo__mark">&gt;</span>
+            <span class="logo__text ">
+                $ cd /home/CBDEVSEC/</span>
+            <span class="logo__cursor" style=
+                  "
+                   
+                   ">
+            </span>
+        
+    </div>
+</a>
+
+
+        <span class="header__right">
+                <nav class="menu">
+    <ul class="menu__inner"><li><a href="/about/">About</a></li><li><a href="/posts/">Posts</a></li><li><a href="/resume/">Resume</a></li><li><a href="/win11guide">Win11</a></li>
+    </ul>
+</nav>
+
+                <span class="menu-trigger">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path d="M0 0h24v24H0z" fill="none"/>
+                        <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/>
+                    </svg>
+                </span>
+                <span class="theme-toggle not-selectable"><svg class="theme-toggler" width="24" height="24" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+   <path d="M22 41C32.4934 41 41 32.4934 41 22C41 11.5066 32.4934 3 22
+   3C11.5066 3 3 11.5066 3 22C3 32.4934 11.5066 41 22 41ZM7 22C7
+   13.7157 13.7157 7 22 7V37C13.7157 37 7 30.2843 7 22Z"/>
+ </svg></span>
+        </span>
+    </span>
+</header>
+
+
+            <div class="content">
+                
+    <main class="post">
+
+        <div class="post-info">
+            
+            </p>
+        </div>
+
+        <article>
+            <h2 class="post-title"><a href="//localhost:1313/win11guide/">Win11guide</a></h2>
+
+            
+            
+            
+
+            <div class="post-content">
+                <h2 id="english">English:</h2>
+<p>🖥️ The Complete Academic Guide to Upgrading to Windows 11</p>
+<hr>
+<p>Introduction
+Microsoft Windows 11, released in October 2021, introduces a redesigned user interface, enhanced security features, and improved performance optimizations. However, unlike previous upgrades (e.g., from Windows 7/8 to Windows 10), the migration to Windows 11 is bound by stricter hardware and firmware requirements, particularly regarding UEFI, Secure Boot, and TPM 2.0.
+This guide provides a step-by-step academic and technical framework for safely upgrading from Windows 10 (or earlier supported editions) to Windows 11. It covers system compatibility analysis, disk partitioning checks, TPM activation, restore point creation, upgrade execution (via Windows Update or ISO), and contingency planning.</p>
+<hr>
+<p>Step 1 – System Compatibility and Requirements
+Windows 11 has a defined set of minimum system requirements. These must be validated prior to installation:
+Minimum Hardware Requirements:
+•	Processor (CPU): 1 GHz or faster, 64-bit, dual-core or more. Only CPUs included in Microsoft’s Windows 11 Processor Compatibility List are officially supported.
+•	Memory (RAM): Minimum 4 GB (8 GB or higher recommended for stable performance).
+•	Storage: At least 64 GB of free storage (128 GB recommended).
+•	Firmware: UEFI firmware with Secure Boot capability.
+•	Trusted Platform Module (TPM): Version 2.0 mandatory.
+•	Graphics Processor: DirectX 12 compatible with WDDM 2.0 driver support.
+•	Display: 9-inch diagonal or larger, with a minimum resolution of 1280 × 720 pixels.
+Method of Compatibility Verification:</p>
+<ol>
+<li>Download the Microsoft PC Health Check App: <a href="https://aka.ms/GetPCHealthCheckApp">https://aka.ms/GetPCHealthCheckApp</a>.</li>
+<li>Install the application and execute a system scan by selecting “Check Now”.
+o	Green Checkmark: The system fulfills all requirements.
+o	Red Cross: One or more requirements are unmet; the report specifies the deficiency.
+Note: Users may also employ third-party tools such as WhyNotWin11 for more granular diagnostic insights.</li>
+</ol>
+<hr>
+<p>Step 2 – Disk Partition Style (MBR vs GPT)
+Windows 11 requires installation on a disk utilizing the GUID Partition Table (GPT) in conjunction with UEFI firmware. Systems configured with MBR (Master Boot Record) in Legacy BIOS mode must be converted.
+Verification Procedure:</p>
+<ol>
+<li>Press Win + R, type diskmgmt.msc, and press Enter to open Disk Management.</li>
+<li>Right-click the system disk (usually Disk 0), then select Properties.</li>
+<li>Navigate to the Volumes tab, and examine Partition Style:
+o	Master Boot Record (MBR): Conversion required.
+o	GUID Partition Table (GPT): Already compliant.
+Conversion Process (Non-Destructive):</li>
+<li>Perform a full system backup as a precautionary measure.</li>
+<li>Open Command Prompt with Administrator privileges.</li>
+<li>Execute sequentially:</li>
+<li>mbr2gpt /validate /allowFullOS</li>
+<li>mbr2gpt /convert /allowFullOS</li>
+<li>Restart the computer and enter the BIOS/UEFI interface.</li>
+<li>Modify the boot configuration from Legacy BIOS to UEFI mode.</li>
+</ol>
+<hr>
+<p>Step 3 – Trusted Platform Module (TPM) 2.0
+Windows 11 mandates the presence and activation of TPM 2.0 for cryptographic and security purposes.
+Verification Procedure:</p>
+<ol>
+<li>Press Win + R, input tpm.msc, and press Enter.</li>
+<li>Review the TPM Management window:
+o	Status: Should read “The TPM is ready for use”.
+o	Specification Version: Must indicate 2.0.
+If TPM is missing or disabled:
+Enabling TPM in BIOS/UEFI:</li>
+<li>Restart the computer and press the manufacturer-specific key (commonly DEL, F2, or F10) to access BIOS/UEFI settings.</li>
+<li>Navigate to Security or Advanced Configuration menus.
+o	For Intel systems: Enable Intel Platform Trust Technology (PTT).
+o	For AMD systems: Enable AMD Firmware TPM (fTPM).</li>
+<li>Save changes and exit.</li>
+</ol>
+<hr>
+<p>Step 4 – System Restore Point (Rollback Preparation)
+Prior to performing the upgrade, it is academically and operationally prudent to create a System Restore Point to mitigate risks.
+Creation Procedure:</p>
+<ol>
+<li>Press Win + S and search for “Create a restore point”.</li>
+<li>Select the system drive (C:), click Configure, and enable System Protection.</li>
+<li>Click Create, assign a descriptive label (e.g., “Pre-Windows 11 Upgrade”).
+Recovery Utilization:
+If system instability occurs post-upgrade:</li>
+<li>Restart the PC while holding Shift + Restart to enter Windows Recovery Environment (WinRE).</li>
+<li>Navigate to Troubleshoot → Advanced Options → System Restore.</li>
+<li>Select the previously created restore point and proceed.</li>
+</ol>
+<hr>
+<p>Step 5 – Upgrade Methods
+There are two primary pathways to upgrade to Windows 11.
+Method A – Windows Update (Recommended):</p>
+<ol>
+<li>Navigate to Settings → Update &amp; Security → Windows Update.</li>
+<li>If the system is eligible, an upgrade banner for Windows 11 will appear.</li>
+<li>Select Download and Install.</li>
+<li>The system will download the necessary files, perform multiple restarts, and finalize installation.
+Method B – ISO File Installation:</li>
+<li>Download the official Windows 11 ISO from Microsoft’s website.</li>
+<li>Right-click the ISO file → select Mount.</li>
+<li>Open the mounted virtual drive and run setup.exe.</li>
+<li>During setup, select an installation preference:
+o	Keep personal files and apps: Smooth upgrade.
+o	Keep personal files only: Applications will be removed.
+o	Nothing: Performs a clean installation.</li>
+<li>Follow the on-screen instructions; system restarts will occur until Windows 11 boots.</li>
+</ol>
+<hr>
+<p>Step 6 – Post-Upgrade Verification
+Upon successful upgrade, the following academic verification steps must be completed:
+•	Device Drivers: Open Device Manager and confirm absence of warnings or errors.
+•	Windows Updates: Run Windows Update to obtain the latest patches and fixes.
+•	System Activation: Verify activation under Settings → System → Activation.
+•	Performance Optimization: Remove unnecessary software via Settings → Apps → Installed Apps.
+•	Security Hardening: Optionally apply privacy tools (e.g., O&amp;O ShutUp10++) to manage telemetry and advertisements.</p>
+<hr>
+<p>Step 7 – Rollback Options
+In the event of user dissatisfaction or compatibility issues, Windows provides rollback functionality:
+•	Within 10 Days:
+o	Navigate to Settings → Recovery → Go back to Windows 10.
+o	Follow the guided rollback process.
+•	After 10 Days:
+o	Automatic rollback option expires.
+o	Reinstallation of Windows 10 must be performed manually using installation media.</p>
+<h2 id="spanish">Spanish:</h2>
+<p>🖥️ Guía Académica Completa para la Actualización a Windows 11</p>
+<hr>
+<p>Introducción
+Microsoft Windows 11, lanzado en octubre de 2021, introduce una interfaz de usuario rediseñada, funciones de seguridad avanzadas y mejoras de rendimiento. Sin embargo, a diferencia de actualizaciones anteriores (por ejemplo, de Windows 7/8 a Windows 10), la migración a Windows 11 está condicionada por requisitos de hardware y firmware más estrictos, en especial en relación con UEFI, Secure Boot y TPM 2.0.
+Esta guía presenta un marco académico y técnico paso a paso para actualizar de manera segura desde Windows 10 (u otras ediciones soportadas) a Windows 11. Incluye el análisis de compatibilidad, la verificación del disco, la activación de TPM, la creación de puntos de restauración, la ejecución de la actualización (mediante Windows Update o ISO) y las estrategias de contingencia en caso de error.</p>
+<hr>
+<p>Paso 1 – Compatibilidad del sistema y requisitos
+Windows 11 exige un conjunto definido de requisitos mínimos de hardware y software.
+Requisitos mínimos de hardware:
+•	Procesador (CPU): 1 GHz o superior, de 64 bits, con al menos dos núcleos. Solo se admiten los procesadores incluidos en la lista oficial de Microsoft.
+•	Memoria (RAM): 4 GB como mínimo (se recomienda 8 GB o más).
+•	Almacenamiento: Al menos 64 GB libres (se recomiendan 128 GB).
+•	Firmware: UEFI con capacidad para Secure Boot.
+•	Módulo de seguridad (TPM): Versión 2.0 obligatoria.
+•	Tarjeta gráfica (GPU): Compatible con DirectX 12 y controlador WDDM 2.0.
+•	Pantalla: Mínimo de 9 pulgadas con resolución de 1280 × 720 píxeles o superior.
+Verificación de compatibilidad:</p>
+<ol>
+<li>Descargue la aplicación oficial PC Health Check de Microsoft: <a href="https://aka.ms/GetPCHealthCheckApp">https://aka.ms/GetPCHealthCheckApp</a>.</li>
+<li>Instale y ejecute la aplicación → haga clic en “Check Now”.
+o	✔️ Marca verde: El equipo cumple los requisitos.
+o	❌ Cruz roja: Algún requisito no se cumple; el informe indica cuál.
+Nota: También se pueden utilizar herramientas externas como WhyNotWin11 para un diagnóstico más detallado.</li>
+</ol>
+<hr>
+<p>Paso 2 – Estilo de partición del disco (MBR vs GPT)
+Windows 11 solo puede instalarse en un disco con GPT (GUID Partition Table) y arrancando en modo UEFI. Los sistemas configurados en MBR (Master Boot Record) con Legacy BIOS deben convertirse.
+Cómo comprobarlo:</p>
+<ol>
+<li>Presione Win + R, escriba diskmgmt.msc y pulse Enter.</li>
+<li>En Administración de discos, haga clic derecho sobre el disco del sistema (usualmente Disco 0) → Propiedades.</li>
+<li>En la pestaña Volúmenes, revise el campo Estilo de partición:
+o	MBR (Master Boot Record): requiere conversión.
+o	GPT (GUID Partition Table): ya es válido.
+Conversión de MBR a GPT (sin pérdida de datos):</li>
+<li>Realice una copia de seguridad completa como medida preventiva.</li>
+<li>Abra el Símbolo del sistema (CMD) como administrador.</li>
+<li>Ejecute los siguientes comandos:</li>
+<li>mbr2gpt /validate /allowFullOS</li>
+<li>mbr2gpt /convert /allowFullOS</li>
+<li>Reinicie el equipo e ingrese en la BIOS/UEFI.</li>
+<li>Cambie el modo de arranque de Legacy BIOS a UEFI.</li>
+</ol>
+<hr>
+<p>Paso 3 – Verificación y activación de TPM 2.0
+El uso de TPM 2.0 es obligatorio en Windows 11 por motivos de seguridad.
+Cómo verificar TPM:</p>
+<ol>
+<li>Presione Win + R, escriba tpm.msc y pulse Enter.</li>
+<li>Revise la ventana de administración de TPM:
+o	Estado: “El TPM está listo para usarse”.
+o	Versión de especificación: Debe indicar 2.0.
+Si el TPM no aparece o está deshabilitado:
+Cómo habilitar TPM en BIOS/UEFI:</li>
+<li>Reinicie el equipo y acceda a la BIOS/UEFI pulsando la tecla indicada (generalmente DEL, F2 o F10).</li>
+<li>Busque en los menús de Seguridad o Configuración avanzada:
+o	En procesadores Intel: active Intel PTT.
+o	En procesadores AMD: active AMD fTPM.</li>
+<li>Guarde los cambios y reinicie.</li>
+</ol>
+<hr>
+<p>Paso 4 – Creación de un punto de restauración del sistema
+Antes de proceder, es altamente recomendable crear un punto de restauración como mecanismo de seguridad.
+Procedimiento:</p>
+<ol>
+<li>Busque “Crear un punto de restauración” en el menú de inicio.</li>
+<li>Seleccione la unidad del sistema (C:), haga clic en Configurar y habilite la Protección del sistema.</li>
+<li>Haga clic en Crear y asigne un nombre descriptivo (por ejemplo: “Antes de Windows 11”).
+Uso en caso de fallo:</li>
+<li>Si el sistema falla, reinicie el PC manteniendo presionada la tecla Shift mientras selecciona Reiniciar para acceder a WinRE (Entorno de recuperación de Windows).</li>
+<li>Vaya a Solucionar problemas → Opciones avanzadas → Restaurar sistema.</li>
+<li>Seleccione el punto de restauración y siga las instrucciones.</li>
+</ol>
+<hr>
+<p>Paso 5 – Métodos de actualización
+Existen dos rutas principales para actualizar a Windows 11.
+Método A – Windows Update (recomendado):</p>
+<ol>
+<li>Vaya a Configuración → Actualización y seguridad → Windows Update.</li>
+<li>Si el sistema es elegible, aparecerá el aviso de actualización a Windows 11.</li>
+<li>Haga clic en Descargar e instalar.</li>
+<li>El sistema descargará los archivos, realizará varios reinicios y completará la instalación.
+Método B – Archivo ISO:</li>
+<li>Descargue el archivo ISO oficial desde la web de Microsoft.</li>
+<li>Haga clic derecho en el ISO → Montar.</li>
+<li>Abra la unidad virtual generada y ejecute setup.exe.</li>
+<li>Elija el tipo de instalación:
+o	Conservar archivos y aplicaciones personales: actualización sin pérdidas.
+o	Conservar solo archivos personales: las aplicaciones se eliminarán.
+o	Nada: instalación limpia desde cero.</li>
+<li>Siga las instrucciones hasta que Windows 11 arranque.</li>
+</ol>
+<hr>
+<p>Paso 6 – Verificación posterior a la actualización
+Una vez completada la instalación, realice las siguientes comprobaciones:
+•	Controladores: Abra el Administrador de dispositivos y confirme que no haya advertencias amarillas.
+•	Windows Update: Ejecute las actualizaciones para aplicar parches recientes.
+•	Activación del sistema: Compruebe en Configuración → Sistema → Activación.
+•	Optimización del rendimiento: Elimine software innecesario en Configuración → Aplicaciones.
+•	Seguridad: Opcionalmente, utilice herramientas como O&amp;O ShutUp10++ para gestionar la telemetría.</p>
+<hr>
+<p>Paso 7 – Reversión a Windows 10
+Si la experiencia no resulta satisfactoria, existen dos opciones:
+•	Dentro de los primeros 10 días:
+o	Vaya a Configuración → Recuperación → Volver a Windows 10.
+o	Siga las instrucciones.
+•	Pasados los 10 días:
+o	La opción automática expira.
+o	Será necesario reinstalar Windows 10 manualmente con un medio de instalación.</p>
+<h2 id="french">French:</h2>
+<p>🖥️ Guide académique détaillé : Migration vers Windows 11
+Introduction
+Windows 11 représente une évolution majeure du système d’exploitation de Microsoft, introduisant une nouvelle interface, des performances optimisées ainsi qu’un renforcement de la sécurité. Toutefois, sa mise à niveau requiert la vérification préalable de plusieurs conditions techniques. Ce guide académique, structuré et exhaustif, présente les étapes nécessaires pour préparer, vérifier et réaliser la migration vers Windows 11, tout en assurant une sécurité maximale des données.</p>
+<hr>
+<ol>
+<li>Vérification de la compatibilité matérielle
+1.1. Exigences minimales officielles de Windows 11
+•	Processeur : 1 GHz ou plus, avec au moins 2 cœurs, compatible 64 bits.
+•	Mémoire vive (RAM) : 4 Go minimum.
+•	Stockage : 64 Go ou plus.
+•	Firmware système : compatible UEFI, avec démarrage sécurisé activé.
+•	TPM : version 2.0 activée.
+•	Carte graphique : compatible DirectX 12 avec pilote WDDM 2.0.
+•	Écran : supérieur à 9 pouces, résolution minimale 720p.
+1.2. Utilisation de l’outil de compatibilité Microsoft
+•	Télécharger l’application officielle PC Health Check depuis le site de Microsoft.
+•	L’exécuter afin d’obtenir un diagnostic clair sur la compatibilité de votre appareil.</li>
+</ol>
+<hr>
+<ol start="2">
+<li>Vérification et conversion du disque dur (MBR → GPT)
+Windows 11 requiert un disque au format GPT (GUID Partition Table) et non MBR (Master Boot Record).
+2.1. Vérification du type de disque</li>
+<li>Appuyer sur Windows + X → Gestion du disque.</li>
+<li>Clic droit sur le disque principal → Propriétés.</li>
+<li>Onglet Volumes → vérifier le style de partition (MBR ou GPT).
+2.2. Conversion de MBR en GPT (méthode sécurisée)</li>
+<li>Sauvegarder toutes vos données.</li>
+<li>Ouvrir Invite de commandes en administrateur.</li>
+<li>Exécuter la commande :</li>
+<li>mbr2gpt /convert /allowFullOS</li>
+<li>Redémarrer l’ordinateur.</li>
+</ol>
+<hr>
+<ol start="3">
+<li>Vérification et activation de la puce TPM 2.0
+3.1. Vérification de la présence de TPM</li>
+<li>Appuyer sur Windows + R → entrer tpm.msc.</li>
+<li>Vérifier la version affichée dans l’onglet « Informations sur le fabricant ».
+o	Si TPM 2.0 apparaît → conforme.
+o	Si TPM est absent → activer via le BIOS/UEFI.
+3.2. Activation de TPM dans le BIOS/UEFI
+•	Redémarrer le PC → accéder au BIOS (F2, Del, Esc selon le constructeur).
+•	Aller dans Security ou Advanced → activer TPM, parfois nommé PTT (Intel) ou fTPM (AMD).
+•	Sauvegarder et quitter.</li>
+</ol>
+<hr>
+<ol start="4">
+<li>Création d’un point de restauration système
+Avant toute mise à niveau, il est impératif de créer un point de restauration.
+4.1. Étapes de création</li>
+<li>Rechercher Créer un point de restauration dans la barre de recherche Windows.</li>
+<li>Sélectionner le disque système → cliquer sur Configurer → activer la protection du système.</li>
+<li>Cliquer sur Créer → donner un nom explicite au point de restauration.
+4.2. Restauration en cas de problème</li>
+<li>Redémarrer le PC → accéder à l’écran avancé de Windows.</li>
+<li>Choisir Dépannage → Options avancées → Restauration du système.</li>
+<li>Sélectionner le point précédemment créé.</li>
+</ol>
+<hr>
+<ol start="5">
+<li>Méthodes de migration vers Windows 11
+5.1. Mise à jour via Windows Update</li>
+<li>Aller dans Paramètres → Mise à jour et sécurité.</li>
+<li>Si compatible, l’option Passer à Windows 11 apparaît.</li>
+<li>Cliquer sur Télécharger et installer.
+5.2. Mise à niveau via fichier ISO</li>
+<li>Télécharger l’ISO officiel de Windows 11 depuis le site Microsoft.</li>
+<li>Monter l’ISO (clic droit → Monter).</li>
+<li>Exécuter setup.exe.</li>
+<li>Choisir Conserver fichiers et applications ou Installer proprement.</li>
+</ol>
+<hr>
+<ol start="6">
+<li>Bonnes pratiques et recommandations
+•	Effectuer une sauvegarde complète sur un disque externe ou un service cloud.
+•	Vérifier que tous les pilotes matériels sont à jour.
+•	Disposer d’une connexion Internet stable.
+•	S’assurer que le BIOS/UEFI est mis à jour vers la dernière version.</li>
+</ol>
+<h2 id="arabic">Arabic:</h2>
+<p>الدليل الأكاديمي المفصّل: الترقية إلى نظام التشغيل Windows 11
+المقدّمة
+يمثّل نظام التشغيل Windows 11 نقلة نوعيّة في أنظمة مايكروسوفت، حيث يوفّر واجهة استخدام حديثة، أداءً محسّناً، بالإضافة إلى تعزيزات أمنية متقدّمة. غير أنّ الترقية إليه تستوجب التحقّق من مجموعة شروط تقنية أساسية. يهدف هذا الدليل الأكاديمي إلى عرض خطوات منهجيّة شاملة للتحقّق من المتطلّبات، وضبط الإعدادات، وتنفيذ عملية الترقية، مع الحفاظ على أعلى مستوى من الأمان وحماية البيانات.</p>
+<hr>
+<ol>
+<li>التحقّق من توافق العتاد (Hardware Compatibility)
+1.1. المتطلّبات الدنيا الرسمية لنظام Windows 11
+•	المعالج: بتردد 1 غيغاهرتز أو أكثر، ثنائي النواة على الأقل، ويدعم 64-بت.
+•	ذاكرة الوصول العشوائي (RAM): لا تقل عن 4 غيغابايت.
+•	التخزين: 64 غيغابايت كحدّ أدنى.
+•	البرمجيات الثابتة (Firmware): متوافقة مع UEFI مع تفعيل خاصيّة الإقلاع الآمن (Secure Boot).
+•	وحدة المنصة الموثوقة (TPM): الإصدار 2.0 مفعّل.
+•	بطاقة الرسوميات: داعمة لـ DirectX 12 مع برنامج تشغيل WDDM 2.0.
+•	الشاشة: أكبر من 9 بوصات بدقّة لا تقل عن 720p.
+1.2. استخدام أداة الفحص الرسمية من مايكروسوفت
+•	تنزيل تطبيق PC Health Check من الموقع الرسمي لمايكروسوفت.
+•	تشغيله للحصول على تقرير شامل حول قابلية الجهاز للترقية.</li>
+</ol>
+<hr>
+<ol start="2">
+<li>التحقّق من نمط القرص الصلب (MBR أو GPT) والتحويل عند الحاجة
+يتطلّب Windows 11 أن يكون القرص بنمط GPT بدلاً من MBR.
+2.1. كيفية التحقّق من النمط</li>
+<li>الضغط على الأزرار Windows + X → اختيار إدارة الأقراص.</li>
+<li>النقر بزر الفأرة الأيمن على القرص الأساسي → خصائص.</li>
+<li>الانتقال إلى تبويب المجلدات ومراجعة نمط التقسيم (MBR أو GPT).
+2.2. التحويل من MBR إلى GPT</li>
+<li>نسخ جميع البيانات احتياطياً.</li>
+<li>فتح موجّه الأوامر بصلاحيّات المدير.</li>
+<li>تنفيذ الأمر:</li>
+<li>mbr2gpt /convert /allowFullOS</li>
+<li>إعادة تشغيل الجهاز.</li>
+</ol>
+<hr>
+<ol start="3">
+<li>التحقّق من وحدة TPM وتفعيلها
+3.1. التحقّق من الإصدار</li>
+<li>الضغط على Windows + R → كتابة tpm.msc.</li>
+<li>مراجعة خانة &ldquo;معلومات المورّد&rdquo;:
+o	إذا ظهر TPM 2.0 → الجهاز متوافق.
+o	إذا لم يظهر → يجب التفعيل عبر إعدادات BIOS/UEFI.
+3.2. تفعيل TPM في إعدادات BIOS/UEFI
+•	إعادة تشغيل الجهاز والدخول إلى الـ BIOS (المفتاح يختلف: F2، Del، Esc…).
+•	الدخول إلى قسم Security أو Advanced.
+•	تفعيل خيار TPM (قد يظهر تحت مسمّى PTT في معالجات Intel أو fTPM في معالجات AMD).
+•	الحفظ والخروج.</li>
+</ol>
+<hr>
+<ol start="4">
+<li>إنشاء نقطة استعادة للنظام (System Restore Point)
+4.1. خطوات الإنشاء</li>
+<li>البحث عن خيار إنشاء نقطة استعادة في شريط البحث.</li>
+<li>تحديد القرص الأساسي للنظام → إعدادات → تفعيل الحماية.</li>
+<li>الضغط على إنشاء وإعطاؤها اسماً واضحاً.
+4.2. استخدام نقطة الاستعادة عند حدوث خلل</li>
+<li>إعادة تشغيل الجهاز والدخول إلى خيارات بدء التشغيل المتقدمة.</li>
+<li>اختيار استكشاف الأخطاء وإصلاحها → خيارات متقدّمة → استعادة النظام.</li>
+<li>تحديد النقطة التي تم إنشاؤها مسبقاً.</li>
+</ol>
+<hr>
+<ol start="5">
+<li>طرق الترقية إلى Windows 11
+5.1. الترقية عبر Windows Update</li>
+<li>فتح الإعدادات → التحديث والأمان.</li>
+<li>في حال التوافق، ستظهر رسالة الترقية إلى Windows 11.</li>
+<li>الضغط على تنزيل وتثبيت.
+5.2. الترقية عبر ملف ISO</li>
+<li>تنزيل النسخة الرسمية من موقع مايكروسوفت.</li>
+<li>النقر بزر الفأرة الأيمن على ملف الـ ISO → تحميل (Mount).</li>
+<li>تشغيل setup.exe.</li>
+<li>اختيار أحد الخيارين: الحفاظ على الملفات والتطبيقات أو التثبيت النظيف.</li>
+</ol>
+<hr>
+<ol start="6">
+<li>الممارسات الموصى بها قبل الترقية
+•	إجراء نسخة احتياطية شاملة للبيانات.
+•	تحديث برامج التشغيل (Drivers) إلى أحدث إصدار.
+•	ضمان اتصال إنترنت مستقر.
+•	التحقّق من تحديث BIOS/UEFI إلى أحدث نسخة متاحة.</li>
+</ol>
+
+            </div>
+        </article>
+
+        <hr />
+
+        <div class="post-info">
+            
+            
+  		</div>
+    </main>
+
+            </div>
+
+            
+                <footer class="footer">
+    
+    <div class="footer__inner">
+        <div class="footer__content">
+            <span>&copy; 2025</span>
+            <span><a href="//localhost:1313/">Aya Khiouat</a></span>
+            <span></span>
+            <span><a href="//localhost:1313/posts/index.xml" target="_blank" title="rss"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-rss"><path d="M4 11a9 9 0 0 1 9 9"></path><path d="M4 4a16 16 0 0 1 16 16"></path><circle cx="5" cy="19" r="1"></circle></svg></a></span>
+            
+        </div>
+    </div>
+    
+    
+    <div class="footer__inner">
+        <div class="footer__content">
+            <span>Powered by <a href="http://gohugo.io">Hugo</a></span><span>Made with &#10084</span>
+        </div>
+    </div>
+    
+</footer>
+
+            
+        </div>
+
+        
+
+
+
+<script type="text/javascript" src="/bundle.min.ad54ad97364f77ede35def9096b162bb1f0b3973aa50b080f5e82fa147f6882e2a7200d7535adbf9b51bebf939f1c1ca9bbe6be87530092aca720eac4a226fda.js" integrity="sha512-rVStlzZPd&#43;3jXe&#43;QlrFiux8LOXOqULCA9egvoUf2iC4qcgDXU1rb&#43;bUb6/k58cHKm75r6HUwCSrKcg6sSiJv2g=="></script>
+
+
+
+
+    </body>
+</html>
